@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>File Upload</title>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data"
+            action="http://localhost:8080/hello/file">
+        <label for="avatar">Enviar arquivo remessa:</label>
+
+        <input type="file"
+            id="avatar" name="avatar"
+            accept=".json">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

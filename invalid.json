@@ -1,0 +1,9 @@
+2019-09-14 12:13:37,855 ERROR [org.jbo.res.res.i18n] (executor-thread-1)
+RESTEASY002010: Failed to execute: javax.ws.rs.NotSupportedException:
+RESTEASY003200: Could not find message body reader for
+type: class com.sun.jersey.core.header.FormDataContentDisposition
+of content type: multipart/form-data;
+boundary=---------------------------100102937219870832021065636279
+
+:q!
+
