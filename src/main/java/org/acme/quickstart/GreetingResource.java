@@ -71,8 +71,7 @@ public class GreetingResource {
             e.printStackTrace();
             return Response.status(400).entity("Json inválido").build();
         }
-        System.out.println(p.getNome() + " is " +
-                p.getIdade() + " years old.");
+        System.out.println(p);
 
         return Response.ok(true).build();
     }

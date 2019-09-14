@@ -1,0 +1,15 @@
+{
+	"nome": "Manoel",
+	"idade": "150",
+	"address": {
+		"number": 9
+	},
+	"professions": [
+		{
+			"name": "software developer"
+		},
+		{
+			"name": "soccer player"
+		}
+	]
+}
