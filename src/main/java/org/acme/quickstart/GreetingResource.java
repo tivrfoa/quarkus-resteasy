@@ -2,6 +2,7 @@ package org.acme.quickstart;
 
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Logger;
 
 import javax.inject.Inject;
 import javax.ws.rs.Consumes;
@@ -29,6 +30,8 @@ public class GreetingResource {
     @Original
     GreetingService2 service2;
 
+    Logger log = Logger.getLogger(GreetingResource.class.getName());
+
     @GET
     @Produces(MediaType.TEXT_PLAIN)
     public String hello() {
@@ -40,7 +43,10 @@ public class GreetingResource {
     @Path("/greeting/{name}")
     public String greeting(@PathParam("name") String name) {
         service2.setName(name);
-        return service.greeting(name + "!");
+
+        log.info(service.greeting(name + "!"));
+
+        return name + "!";
     }
 
     @POST
